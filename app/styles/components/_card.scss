@@ -47,7 +47,7 @@
 .card-footer {
   background: none;
   padding: 0;
-  .btn {
+  &__btn  {
     font-weight: 900;
     text-transform: uppercase;
     color: $headings-color;
@@ -57,7 +57,9 @@
     border-radius: 0;
     padding:16px 15px;
     border: none;
-    border-right: 1px solid $card-border-color;
+    &.left {
+      border-right: 1px solid $card-border-color;
+    }
   }
 
 
