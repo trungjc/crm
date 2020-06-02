@@ -13,7 +13,7 @@ $gray-400: #ced4da !default;
 $gray-500: #e1e4ea !default;
 $gray-600: #505867 !default;
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
+$gray-800: #f5f5fa !default;
 $gray-900: #8181A5 !default;
 $black:    #000 !default;
 
@@ -98,7 +98,7 @@ $body-color:                $gray-900 !default;
 
 $grid-gutter-width:           30px !default;
 
-$headings-margin-bottom:      2rem !default;
+$headings-margin-bottom:      1rem !default;
 $headings-font-family:        inherit !default;
 $headings-font-weight:        700 !default;
 $headings-line-height:        1.41 !default;
@@ -208,3 +208,4 @@ $border-radius-lg:           6px !default;
 $padding-horizontal-md: 7rem;
 $padding-horizontal-sm: 4rem;
 $border: rgba(167,171,179,0.38);
+$card-border-color:  #eee;

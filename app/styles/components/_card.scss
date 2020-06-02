@@ -2,7 +2,7 @@
   margin-bottom: 14px;
   text-align: center;
   border-radius: 12px;
-  border: 1px solid #ECECF2;
+  //border: 1px solid #eeeeee;
   box-shadow: none;
   &__avatar {
     margin-bottom: 10px;
@@ -17,7 +17,7 @@
   }
   &__price {
     padding: 8px 10px;
-    background: $body-bg;
+    background: $gray-800;
     border-radius: 8px;
     float: right;
     font-weight: bold;
@@ -51,9 +51,8 @@
   color: $headings-color;
   font-size: 12px;
   padding: 0;
-  border-top: 1px solid #ECECF2;
   &__left {
-    border-right: 1px solid #ECECF2;
+    border-right: 1px solid $card-border-color;
     width: 50%;
     padding:16px 15px;
   }

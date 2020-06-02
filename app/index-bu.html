@@ -9,10 +9,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
-    <!-- build:css styles/vendor.css -->
-    <!--<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />-->
-    <!--<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css" type="text/css" />-->
-    <!-- endbuild -->
+
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -166,20 +163,6 @@
               </div>
             </div>
           </div>
-          <div class="chart-box">
-            <div class="d-flex justify-content-between align-items-center">
-              <div>
-                <h5 class="mb-0">Conversion history</h5>
-                <p>Week to week performance</p>
-              </div>
-              <button class="btn-icon btn-icon--small">
-              <i class="las la-chart-area f-16"></i>
-              </button>
-            </div>
-            <div class="chart__container mt-5">
-              <img src="images/chart-1.png" />
-            </div>
-          </div>
         </div>
       </div>
       <!--End wrapper__left-->
@@ -188,7 +171,7 @@
         <div class="content__top d-flex justify-content-between align-items-center">
           <div class="content__top-left d-flex align-items-center">
 
-            <button class="btn-toggle-sidebar btn-icon--small btn-icon mr-4"><i class="las la-bars"></i></button>
+            <button class="btn-toggle btn-icon--small btn-icon mr-4"><i class="las la-bars"></i></button>
             <h3 class="mb-0 page--title">Contacts</h3>
 
           </div>
@@ -208,14 +191,13 @@
               <button class="btn-grid btn-filter btn btn-primary"><i class="las la-border-all f-16 mr-2"></i> GRID</button>
             </div>
             <div class="filter-top__right d-flex">
-              <span class="d-flex align-items-center"><i class="las la-filter f-18 mr-2"></i>SORT:</span>
-              <select class="form-control filter__select">
+              <span class="d-flex align-items-center"><i class="las la-filter"></i>SORT</span>
+              <select class="form-control">
                 <option>A-Z</option>
                 <option>Z-A</option>
               </select>
             </div>
           </div>
-          <!--filter-->
           <div class="filter row no-gutters ">
             <div class="col-md-3 filter__row d-flex justify-content-between">
               <div class="filter__name">Name</div>
@@ -242,12 +224,9 @@
               </button>
             </div>
           </div>
-          <!--filter-->
-
-          <!--grid-->
-          <div class="row row--sm grid">
+          <div class="row row--sm">
             <div class="col-lg-3 col-md-4 ">
-              <div class="card ">
+              <div class="card card--contact">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
                   <div class="card__avatar">
@@ -266,14 +245,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="d-flex justify-content-between card-footer card-footer--contact" >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 ">
-              <div class="card ">
+              <div class="card card--contact">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
                   <div class="card__avatar">
@@ -292,14 +271,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="d-flex justify-content-between card-footer card-footer--contact" >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 ">
-              <div class="card ">
+              <div class="card card--contact">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
                   <div class="card__avatar">
@@ -318,14 +297,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="d-flex justify-content-between card-footer card-footer--contact" >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 ">
-              <div class="card ">
+              <div class="card card--contact">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
                   <div class="card__avatar">
@@ -344,14 +323,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="d-flex justify-content-between card-footer card-footer--contact" >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 ">
-              <div class="card ">
+              <div class="card card--contact">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
                   <div class="card__avatar">
@@ -370,14 +349,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="d-flex justify-content-between card-footer card-footer--contact" >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 ">
-              <div class="card ">
+              <div class="card card--contact">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
                   <div class="card__avatar">
@@ -396,14 +375,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="d-flex justify-content-between card-footer card-footer--contact" >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 ">
-              <div class="card ">
+              <div class="card card--contact">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
                   <div class="card__avatar">
@@ -422,14 +401,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="d-flex justify-content-between card-footer card-footer--contact" >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 ">
-              <div class="card ">
+              <div class="card card--contact">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
                   <div class="card__avatar">
@@ -448,26 +427,22 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="d-flex justify-content-between card-footer card-footer--contact" >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
           </div>
-          <!--grid-->
-
           <nav class="pagination-container">
-            <ul class="pagination mb-0 justify-content-center">
-              <li class="page-item  prev">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
                 <a class="page-link" href="#" tabindex="-1"><i class="las la-angle-left"></i> PREV</a>
               </li>
               <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item active"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
               <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item next">
+              <li class="page-item">
                 <a class="page-link" href="#">NEXT <i class="las la-angle-right"></i></a>
               </li>
             </ul>
