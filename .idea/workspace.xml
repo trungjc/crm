@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="befe2c89-6b03-4d2a-b04d-6e106efc8491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/styles/components/_box.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/_utilities.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/_variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/_variable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/components/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/components/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/components/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/components/_left-bar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/components/_left-bar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/components/_type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/components/_type.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/components/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/components/_card.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,15 +13,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="177" column="56" selection-start-line="177" selection-start-column="56" selection-end-line="177" selection-end-column="56" />
+            <state relative-caret-position="443">
+              <caret line="455" column="97" selection-start-line="455" selection-start-column="97" selection-end-line="455" selection-end-column="97" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/components/_card.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -62,20 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/components/_button.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="255">
               <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -147,6 +138,7 @@
       <find>d-flex justify-content-between</find>
       <find>profile__sub</find>
       <find>col-lg-3 col-md-4</find>
+      <find>card-footer__left</find>
     </findStrings>
     <replaceStrings>
       <replace>d-flex justify-content-between card-footer card-footer--contact</replace>
@@ -185,7 +177,6 @@
         <option value="$PROJECT_DIR$/app/index-bu.html" />
         <option value="$PROJECT_DIR$/app/styles/components/_filter.scss" />
         <option value="$PROJECT_DIR$/app/styles/components/_pagination.scss" />
-        <option value="$PROJECT_DIR$/app/styles/components/_card.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/styles/components/_index.scss" />
         <option value="$PROJECT_DIR$/app/styles/components/_box.scss" />
@@ -194,8 +185,9 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/styles/components/_type.scss" />
         <option value="$PROJECT_DIR$/app/styles/components/_left-bar.scss" />
-        <option value="$PROJECT_DIR$/app/contact.html" />
         <option value="$PROJECT_DIR$/app/styles/components/_button.scss" />
+        <option value="$PROJECT_DIR$/app/styles/components/_card.scss" />
+        <option value="$PROJECT_DIR$/app/contact.html" />
       </list>
     </option>
   </component>
@@ -285,7 +277,7 @@
       <workItem from="1591023839130" duration="6807000" />
       <workItem from="1591087328179" duration="1215000" />
       <workItem from="1591090293900" duration="6244000" />
-      <workItem from="1591096622931" duration="9324000" />
+      <workItem from="1591096622931" duration="9746000" />
     </task>
     <task id="LOCAL-00001" summary="UPdate contact grid 02">
       <created>1591115769142</created>
@@ -294,11 +286,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591115769142</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=" contact grid 02: finish desktop">
+      <created>1591117826201</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591117826201</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23590000" />
+    <option name="totallyTimeSpent" value="24012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,7 +312,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2973138" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2973138" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -329,7 +328,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.35" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.35" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -341,7 +340,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UPdate contact grid 02" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPdate contact grid 02" />
+    <MESSAGE value=" contact grid 02: finish desktop" />
+    <option name="LAST_COMMIT_MESSAGE" value=" contact grid 02: finish desktop" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -541,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/components/_card.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -602,21 +595,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/components/_button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/components/_card.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="177" column="56" selection-start-line="177" selection-start-column="56" selection-end-line="177" selection-end-column="56" />
+        <state relative-caret-position="443">
+          <caret line="455" column="97" selection-start-line="455" selection-start-column="97" selection-end-line="455" selection-end-column="97" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/components/_button.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
         </state>
       </provider>
     </entry>
