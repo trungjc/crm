@@ -1,0 +1,35 @@
+
+.btn-icon {
+
+  padding:0;
+  border: none;
+  outline: none!important;
+  background: none;
+  box-shadow: none;
+  &--small {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #e9e9f1;
+    border-radius: 4px;
+    &:hover {
+      background: $blue;
+      color: white;
+
+    }
+  }
+}
+
+.btn {
+  font-size: 1.2rem;
+  &.active {
+    color: white;
+    background: $blue;
+    border-color: $blue;
+  }
+}
+
+.btn-light {
+  color: $blue
+}

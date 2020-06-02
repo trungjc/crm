@@ -1,0 +1,19 @@
+
+.filter {
+  background: rgba(245,245,250,0.4);
+  margin: 0 -25px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 13px;
+  &__row {
+    padding: 15px 12px 15px 12px!important;
+    i {
+      font-size: 14px;
+    }
+
+  }
+}
+
+.filter-top {
+  margin: 0 0 20px;
+}

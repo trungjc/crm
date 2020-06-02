@@ -1,0 +1,69 @@
+.card {
+  margin-bottom: 14px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #ECECF2;
+  box-shadow: none;
+  &__avatar {
+    margin-bottom: 10px;
+
+    img {
+      border-radius: 8px;
+      max-width: 66px;
+    }
+  }
+  &__name {
+    margin: 0 0;
+  }
+  &__price {
+    padding: 8px 10px;
+    background: $body-bg;
+    border-radius: 8px;
+    float: right;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: -5px;
+    & + * {
+      clear: both;
+    }
+  }
+  &__progress {
+    color: $headings-color;
+    padding: 20px 0;
+    .progress {
+      margin-top: 5px;
+    }
+  }
+  &__progress-percent {
+    font-weight: bold;
+  }
+
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-footer {
+  background: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $headings-color;
+  font-size: 12px;
+  padding: 0;
+  border-top: 1px solid #ECECF2;
+  &__left {
+    border-right: 1px solid #ECECF2;
+    width: 50%;
+    padding:16px 15px;
+  }
+  &__right {
+    width: 50%;
+    padding:16px 15px;
+  }
+  i {
+    margin-right: 5px;
+    font-size: 18px;
+
+  }
+}

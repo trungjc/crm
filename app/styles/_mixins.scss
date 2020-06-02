@@ -1,0 +1,647 @@
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin appearance($value) {
+  webkit-appearance: $value;
+  -moz-appearance:    $value;
+  appearance:         $value;
+}
+@mixin gadientBox() {
+  content:"";
+  position: absolute;
+  left:0;
+  bottom:0;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  pointer-events: none;
+  opacity: 0.8;
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 100%);
+}
+
+@mixin scale($value) {
+  -webkit-transform: scale($value);
+  -moz-transform: scale($value);
+  -ms-transform: scale($value);
+  -o-transform: scale($value);
+  transform: scale($value);
+}
+
+@mixin scale2D($value, $value2) {
+  -webkit-transform: scale($value, $value2);
+  -moz-transform: scale($value, $value2);
+  -ms-transform: scale($value, $value2);
+  -o-transform: scale($value, $value2);
+  transform: scale($value, $value2);
+}
+
+
+@mixin translateX($left) {
+  -webkit-transform: translateX($left);
+  -moz-transform: translateX($left);
+  -ms-transform: translateX($left);
+  -o-transform: translateX($left);
+  transform: translateX($left);
+}
+
+@mixin translateY($top) {
+  -webkit-transform: translateY($top);
+  -moz-transform: translateY($top);
+  -ms-transform: translateY($top);
+  -o-transform: translateY($top);
+  transform: translateY($top);
+}
+@mixin transform($top,$left) {
+  -webkit-transform: translate($top,$left);
+  -moz-transform: translate($top,$left);
+  -ms-transform: translate($top,$left);
+  -o-transform: translate($top,$left);
+  transform: translate($top,$left);
+}
+
+@mixin translate2D($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin translate3D($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+  -moz-transform: translate3d($x, $y, $z);
+  -ms-transform: translate3d($x, $y, $z);
+  -o-transform: translate3d($x, $y, $z);
+  transform: translate3d($x, $y, $z);
+}
+
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin perspective($value) {
+  -moz-perspective: $value;
+  -webkit-perspective: $value;
+  perspective: $value;
+}
+@mixin rotateY($deg) {
+  -webkit-transform: rotateY($deg);
+  -moz-transform: rotateY($deg);
+  -ms-transform: rotateY($deg);
+  -o-transform: rotateY($deg);
+  transform: rotateY($deg);
+}
+
+@mixin transition($time) {
+  -webkit-transition: all $time ease-out;
+  -moz-transition: all $time ease-out;
+  -o-transition: all $time ease-out;
+  transition: all $time ease-out;
+}
+
+@mixin transitionAttr($attr, $time) {
+  -webkit-transition: $attr $time ease-out;
+  -moz-transition: $attr $time ease-out;
+  -o-transition: $attr $time ease-out;
+  transition: $attr $time ease-out;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border-radius-top($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  -moz-border-radius-topright: $radius;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+@mixin border-radius-bottom($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomright: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+@mixin opacity($op) {
+  opacity: $op;
+  filter: alpha(opacity=$op);
+}
+
+@mixin transition($time) {
+  -webkit-transition: all $time ease;
+  transition: all $time ease;
+}
+
+@mixin ul-clean () {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin three-dots () {
+  white-space: nowrap;
+  overflow:hidden !important;
+  text-overflow: ellipsis;
+}
+
+
+// --------------------------------------------------
+// Flexbox SASS mixins
+// The spec: http://www.w3.org/TR/css3-flexbox
+// --------------------------------------------------
+
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// Flexbox display
+@mixin filter-blur($value) {
+  -webkit-filter: blur($value);
+  -moz-filter: blur($value);
+  -o-filter: blur($value);
+  -ms-filter: blur($value);
+  filter: blur($value);
+}
+
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  -moz-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
+}
+
+// Display Order
+// - applies to: flex items
+// <integer>
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+// Flex grow factor
+// - applies to: flex items
+// <number>
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+  -moz-flex-grow: $grow;
+  -ms-flex-grow: $grow;
+  flex-grow: $grow;
+}
+
+// Flex shrink
+// - applies to: flex item shrink factor
+// <number>
+@mixin flex-shrink($shrink) {
+  -webkit-flex-shrink: $shrink;
+  -moz-flex-shrink: $shrink;
+  -ms-flex-shrink: $shrink;
+  flex-shrink: $shrink;
+}
+
+// Flex basis
+// - the initial main size of the flex item
+// - applies to: flex itemsnitial main size of the flex item
+// <width>
+@mixin flex-basis($width) {
+  -webkit-flex-basis: $width;
+  -moz-flex-basis: $width;
+  -ms-flex-basis: $width;
+  flex-basis: $width;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+  -moz-align-content: $align;
+  -ms-align-content: $align;
+  align-content: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  -ms-flex-align: $align;
+  align-items: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex items
+// auto | flex-start | flex-end | center | baseline | stretch
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+  -moz-align-self: $align;
+  -ms-align-self: $align;
+  align-self: $align;
+}
+// Placeholder text
+@mixin placeholder($color: $placeholder) {
+  // Firefox
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder { color: $color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+}
+@mixin switch($width,$height,$bgcolor,$color) {
+  position: relative;
+  @include flexbox();
+  @include align-items(center);
+  &.reverse {
+    @include flex-direction(row-reverse);
+    label {
+      margin: 0 0 0 8px;
+    }
+  }
+  label {
+    margin: 0 8px 0 0 ;
+    font-size: 12px;
+    span {
+      &:first-child {
+
+      }
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  input {
+    height: $height;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+    &:checked {
+      & + label {
+        span:first-child {
+          display: none;
+        }
+        span:last-child {
+          display: block;
+        }
+      }
+      & ~ .toggle-outside {
+        background:$bgcolor;
+      }
+      & ~  .toggle-outside .toggle-inside {
+        left: $width/2 + 2;
+      }
+    }
+  }
+  .toggle-outside {
+    background: #ebebeb;
+    position: relative;
+    width: $width;
+    border-radius: 30px;
+    height: $height;
+    overflow: hidden;
+    transition: 0.25s ease all;
+  }
+  .toggle-inside {
+    box-shadow: -1px 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 50%;
+    background: $color;
+    position: absolute;
+    transition: 0.25s ease all;
+    height:$height - 4;
+    width: $height - 4;
+    left: 2px;
+    top: 50%;
+    @include translateY(-50%);
+  }
+}
+@mixin  user-select($value) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
+
+@mixin checkbox($size:42px,$border-size: 3px,$tick-size:20px,$color: #2FC56f,$top:0px) {
+  display: block;
+  position: relative;
+  padding-left: $size + 10px;
+  cursor: pointer;
+  margin: 0;
+  min-height: $size;
+  text-align: left;
+  max-width: 400px;
+  @include user-select(none);
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked + span:before {
+      opacity: 1;
+    }
+  }
+  span {
+    position: absolute;
+    left:0;
+    top:$top;
+    display: block;
+    width:$size;
+    height: $size;
+    background: white;
+    border:$border-size solid $color;
+    border-radius: 4px;
+    &:before {
+      display: block;
+      content: "";
+      width: $tick-size;
+      height: $tick-size/2;
+      border-left: $border-size solid $color;
+      border-bottom: $border-size solid $color;
+      position: absolute;
+      left: 50%;
+      top: 44%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      transition: all 0.3s linear;
+      opacity: 0;
+    }
+  }
+}
+
+@mixin radio($size:42px,$border-size: 2px,$tick-size:32px,$color: #2FC56f,$top:0px) {
+  span {
+    border-radius: 50%;
+    &:before {
+      height: $tick-size;
+      width: $tick-size;
+      top: 50%;
+      @include transform(-50%, -50%);
+      border-radius:  50%;
+      background: $color;
+      border: $border-size solid $color;
+    }
+  }
+}
+
+@mixin dotdotdot($font-size: 16px, $line-height: 1.4, $lines-to-show: 1, $excerpt-bg: transparent) {
+  background: $excerpt-bg;
+  /// Fallback for non-webkit /
+  display: block;
+  display: -webkit-box;
+  max-height: $font-size*$line-height*$lines-to-show ;
+  /// Fallback for non-webkit /
+  font-size: $font-size ;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    background: $excerpt-bg;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    float: right;
+    content: '\2026';
+    margin-left: -10rem;
+    width: 3rem;
+  }
+  &:after {
+    content:'';
+    background: $excerpt-bg;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+  }
+  //@media screen and (min--moz-device-pixel-ratio:0),
+  //screen and (-ms-high-contrast: active),
+  //screen and (-ms-high-contrast: none) {
+  //    overflow: hidden;
+  //    position: relative;
+  //    &:before {
+  //        background: $excerpt-bg;
+  //        bottom: 0;
+  //        position: absolute;
+  //        right: 0;
+  //        float: right;
+  //        content: '';
+  //        margin-left: -3rem;
+  //        width: 3rem;
+  //    }
+  //    &:after {
+  //        content:'';
+  //        background: $excerpt-bg;
+  //        position: absolute;
+  //        height: 50px;
+  //        width: 100%;
+  //        z-index: 1;
+  //    }
+  //}
+}
+
+
+/**
+ *
+ * FONT SMOOTHING
+ *
+ * Changes the font rendering,
+ * allowing thinner fonts
+ */
+
+@mixin fontSmoothing {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+
+@mixin min-768 {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin min-992 {
+  @media screen and (min-width:992px) {
+    @content;
+  }
+}
+@mixin min-1025 {
+  @media screen and (min-width:1025px) {
+    @content;
+  }
+}
+@mixin min-1200 {
+  @media screen and (min-width:1200px) {
+    @content;
+  }
+}
+
+@mixin min-1921 {
+  @media screen and (min-width:1921px) {
+    @content;
+  }
+}
+//============max-width: 1024==============///
+@mixin max-1024 {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+
+
+//============max-width: 991==============///
+@mixin max-991 {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin range-1025-1200 {
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+
+@mixin range-992-1200 {
+  @media (min-width: 992px) and (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin range-992-1024 {
+  @media (min-width: 992px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+
+@mixin range-768-991 {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+
+@mixin range-768-1024 {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+
+@mixin max-767 {
+  @media screen and (max-width:767px) {
+    @content;
+  }
+}
+
+@mixin max-480 {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin max-375 {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
