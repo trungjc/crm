@@ -46,6 +46,7 @@
         position: absolute;
         right: -20px;
         background: $blue;
+        z-index: 1;
         top:0;
         border-radius: 4px;
         content:"";
@@ -94,4 +95,21 @@
       border-radius: 4px;
     }
   }
+}
+
+.profile-select {
+  padding:  0 0 24px;
+  position: relative;
+  &:after {
+    content:"";
+    left: -30px;
+    bottom:0;
+    position: absolute;
+    height: 1px;
+    width: calc(100% + 60px);
+    background: $border;
+  }
+}
+.boxes {
+  min-height: 54vh;
 }

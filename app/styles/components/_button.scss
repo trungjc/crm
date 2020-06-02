@@ -1,18 +1,39 @@
 
 .btn-icon {
-
+  text-align: center;
   padding:0;
   border: none;
   outline: none!important;
   background: none;
   box-shadow: none;
+  &--yellow {
+    background: #fef8ef!important;
+  }
+  &--blue {
+    background: #ecfcfe!important;
+  }
+  &--medium {
+    width: 56px;
+    height:  56px;
+    background: #e9e9f1;
+    border-radius: 10px;
+    line-height:  56px;
+  }
   &--small {
     width: 36px;
     height: 36px;
     line-height: 36px;
-    text-align: center;
+
     background: #e9e9f1;
     border-radius: 4px;
+    &.xs {
+      width: 42px;
+      height: 42px;
+      line-height: 42px;
+    }
+    &:after {
+      display: none;
+    }
     &:hover {
       background: $blue;
       color: white;

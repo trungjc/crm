@@ -10,4 +10,16 @@
   font-size: 1.6rem!important;
 }
 
-
+.block-center-between {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
+}
+.block-between {
+  @include flexbox;
+  @include justify-content(space-between);
+}
+.block-center {
+  @include flexbox;
+  @include align-items(center);
+}

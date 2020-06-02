@@ -5,7 +5,7 @@
     <meta name="description" content="">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>crm html</title>
+    <title>Contact grid</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
@@ -33,7 +33,7 @@
           </a>
           <ul class="left-bar nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" href="">
+              <a class="nav-link " href="">
                 <i class="las la-tachometer-alt"></i>
                 <span>Dashboard</span>
               </a>
@@ -52,7 +52,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link " href=""> <i class="las la-user-lock"></i><span>Contacts</span></a>
+              <a class="nav-link active" href=""> <i class="las la-user-lock"></i><span>Contacts</span></a>
             </li>
 
             <li class="nav-item">
@@ -95,84 +95,87 @@
           </div>
         </div>
         <div class="wrapper__left-content">
-          <div class="profile d-flex">
-            <div class="profile__image">
+          <div class="profile-select d-flex">
+            <div class="profile-select__image mr-4">
               <img src="images/w.png" width="36">
             </div>
-            <div class="profile__content">
-              <div class="profile__name">WHITEUI.STORE LLC</div>
-              <div class="profile__sub">8484 Ross Wells</div>
-            </div>
-            <div class="profile__action">
-              <div class="dropdown">
-                <button class="btn-icon--smal btn-icon dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="las la-angle-down"></i>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+            <div class="flex-grow-1 block-center-between">
+              <div>
+                <h6 class="profile__name mb-0">WHITEUI.STORE LLC</h6>
+                <div class="profile__sub">8484 Ross Wells</div>
+              </div>
+              <div class="profile-select__action">
+                <div class="dropdown">
+                  <button class="btn-icon--small btn-icon dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="las la-angle-down"></i>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="heading">
-            <h5 class="heading__top">Contacts overview</h5>
+
+          <div class="heading mb-4 mt-5">
+            <h5 class="heading__top mb-0">Contacts overview</h5>
             <p class="heading__sub">Your employees and clients details</p>
           </div>
           <div class="boxes">
-            <div class="box">
+            <div class="box block-center-between">
               <div class="box__left">
                 <h4 class="box__left-title">5.667</h4>
                 <p class="box__left-text">All Contacts</p>
               </div>
               <div class="box__right">
-                <button class="btn-icon btn-icon--smal">
-                  <i class="las la-users-cog"></i>
+                <button class="btn-icon btn-icon--medium">
+                  <i class="las la-users-cog f-20 link"></i>
                 </button>
               </div>
             </div>
-            <div class="box">
+            <div class="box block-center-between">
               <div class="box__left">
                 <h4 class="box__left-title">1.345</h4>
                 <p class="box__left-text">Employees</p>
               </div>
               <div class="box__right">
-                <button class="btn-icon btn-icon--small">
-                  <i class="las la-user-lock"></i>
+                <button class="btn-icon btn-icon--medium">
+                  <i class="las la-user-lock f-20 link"></i>
                 </button>
               </div>
             </div>
-            <div class="box">
+            <div class="box block-center-between">
               <div class="box__left">
                 <h4 class="box__left-title">342</h4>
                 <p class="box__left-text">Partners</p>
               </div>
               <div class="box__right">
-                <button class="btn-icon btn-icon--small btn-icon--yellow">
-                  <i class="las la-user-clock"></i>
+                <button class="btn-icon btn-icon--medium btn-icon--yellow">
+                  <i class="las la-user-clock f-20 link"></i>
                 </button>
               </div>
             </div>
-            <div class="box">
+            <div class="box block-center-between">
               <div class="box__left">
                 <h4 class="box__left-title">3.980</h4>
                 <p class="box__left-text">Customers</p>
               </div>
               <div class="box__right">
-                <button class="btn-icon btn-icon--small btn-icon--blue">
-                  <i class="las la-user-clock"></i>
+                <button class="btn-icon btn-icon--medium btn-icon--blue">
+                  <i class="las la-user-clock f-20 link"></i>
                 </button>
               </div>
             </div>
           </div>
-          <div class="chart-box">
-            <div class="d-flex justify-content-between align-items-center">
+          <div class=" box box--chart">
+            <div class="block-center-between">
               <div>
                 <h5 class="mb-0">Conversion history</h5>
-                <p>Week to week performance</p>
+                <div>Week to week performance</div>
               </div>
-              <button class="btn-icon btn-icon--small">
+              <button class="btn-icon btn-icon--small xs">
               <i class="las la-chart-area f-16"></i>
               </button>
             </div>
@@ -185,7 +188,7 @@
       <!--End wrapper__left-->
       <!--wrapper__right-->
       <div class="wrapper__right">
-        <div class="content__top d-flex justify-content-between align-items-center">
+        <div class="content__top block-center-between">
           <div class="content__top-left d-flex align-items-center">
 
             <button class="btn-toggle-sidebar btn-icon--small btn-icon mr-4"><i class="las la-bars"></i></button>
@@ -202,7 +205,7 @@
           </div>
         </div>
         <div class="content">
-          <div class="filter-top d-flex justify-content-between align-items-center">
+          <div class="filter-top block-center-between">
             <div class="filter-top__left">
               <button class="btn-list btn-filter btn btn-light mr-2"><i class="las la-list-ol f-16 mr-2"></i> LIST</button>
               <button class="btn-grid btn-filter btn btn-primary"><i class="las la-border-all f-16 mr-2"></i> GRID</button>
@@ -217,25 +220,25 @@
           </div>
           <!--filter-->
           <div class="filter row no-gutters ">
-            <div class="col-md-3 filter__row d-flex justify-content-between">
+            <div class="col-md-3 filter__row block-between">
               <div class="filter__name">Name</div>
               <button class="filter__icon btn-icon">
                 <i class="las la-sort-alpha-down"></i>
               </button>
             </div>
-            <div class="col-md-3 filter__row d-flex justify-content-between">
+            <div class="col-md-3 filter__row block-between">
               <div class="filter__name">Email</div>
               <button class="filter__icon btn-icon">
                 <i class="las la-sort-alpha-down"></i>
               </button>
             </div>
-            <div class="col-md-3 filter__row d-flex justify-content-between">
+            <div class="col-md-3 filter__row block-between">
               <div class="filter__name">Tag</div>
               <button class="filter__icon btn-icon">
                 <i class="las la-sort-alpha-down"></i>
               </button>
             </div>
-            <div class="col-md-3 filter__row d-flex justify-content-between">
+            <div class="col-md-3 filter__row block-between">
               <div class="filter__name">Rate</div>
               <button class="filter__icon btn-icon">
                 <i class="las la-sort-numeric-down"></i>
@@ -246,7 +249,7 @@
 
           <!--grid-->
           <div class="row row--sm grid">
-            <div class="col-lg-3 col-md-4 ">
+            <div class="col-lg-3 col-md-6 ">
               <div class="card ">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
@@ -257,7 +260,7 @@
                   <h5 class="card__name">David Moss</h5>
                   <div class="card__position">Developer</div>
                   <div class="card__progress" >
-                    <div class="d-flex justify-content-between">
+                    <div class="block-between">
                       <span class="card__progress-text">Job progress</span>
                       <span  class="card__progress-percent">50%</span>
                     </div>
@@ -266,13 +269,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="block-between card-footer " >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 ">
+            <div class="col-lg-3 col-md-6 ">
               <div class="card ">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
@@ -283,7 +286,7 @@
                   <h5 class="card__name">David Moss</h5>
                   <div class="card__position">Developer</div>
                   <div class="card__progress" >
-                    <div class="d-flex justify-content-between">
+                    <div class="block-between">
                       <span class="card__progress-text">Job progress</span>
                       <span  class="card__progress-percent">50%</span>
                     </div>
@@ -292,13 +295,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="block-between card-footer " >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 ">
+            <div class="col-lg-3 col-md-6 ">
               <div class="card ">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
@@ -309,7 +312,7 @@
                   <h5 class="card__name">David Moss</h5>
                   <div class="card__position">Developer</div>
                   <div class="card__progress" >
-                    <div class="d-flex justify-content-between">
+                    <div class="block-between">
                       <span class="card__progress-text">Job progress</span>
                       <span  class="card__progress-percent">50%</span>
                     </div>
@@ -318,13 +321,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="block-between card-footer " >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 ">
+            <div class="col-lg-3 col-md-6 ">
               <div class="card ">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
@@ -335,7 +338,7 @@
                   <h5 class="card__name">David Moss</h5>
                   <div class="card__position">Developer</div>
                   <div class="card__progress" >
-                    <div class="d-flex justify-content-between">
+                    <div class="block-between">
                       <span class="card__progress-text">Job progress</span>
                       <span  class="card__progress-percent">50%</span>
                     </div>
@@ -344,13 +347,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="block-between card-footer " >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 ">
+            <div class="col-lg-3 col-md-6 ">
               <div class="card ">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
@@ -361,7 +364,7 @@
                   <h5 class="card__name">David Moss</h5>
                   <div class="card__position">Developer</div>
                   <div class="card__progress" >
-                    <div class="d-flex justify-content-between">
+                    <div class="block-between">
                       <span class="card__progress-text">Job progress</span>
                       <span  class="card__progress-percent">50%</span>
                     </div>
@@ -370,13 +373,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="block-between card-footer " >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 ">
+            <div class="col-lg-3 col-md-6 ">
               <div class="card ">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
@@ -387,7 +390,7 @@
                   <h5 class="card__name">David Moss</h5>
                   <div class="card__position">Developer</div>
                   <div class="card__progress" >
-                    <div class="d-flex justify-content-between">
+                    <div class="block-between">
                       <span class="card__progress-text">Job progress</span>
                       <span  class="card__progress-percent">50%</span>
                     </div>
@@ -396,13 +399,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="block-between card-footer " >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 ">
+            <div class="col-lg-3 col-md-6 ">
               <div class="card ">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
@@ -413,7 +416,7 @@
                   <h5 class="card__name">David Moss</h5>
                   <div class="card__position">Developer</div>
                   <div class="card__progress" >
-                    <div class="d-flex justify-content-between">
+                    <div class="block-between">
                       <span class="card__progress-text">Job progress</span>
                       <span  class="card__progress-percent">50%</span>
                     </div>
@@ -422,13 +425,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="block-between card-footer " >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 ">
+            <div class="col-lg-3 col-md-6 ">
               <div class="card ">
                 <div class="card-body">
                   <div class="card__price">$17.00</div>
@@ -439,7 +442,7 @@
                   <h5 class="card__name">David Moss</h5>
                   <div class="card__position">Developer</div>
                   <div class="card__progress" >
-                    <div class="d-flex justify-content-between">
+                    <div class="block-between">
                       <span class="card__progress-text">Job progress</span>
                       <span  class="card__progress-percent">50%</span>
                     </div>
@@ -448,7 +451,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between card-footer " >
+                <div class="block-between card-footer " >
                   <div class="card-footer__left"><i class="las la-envelope-open"></i> Email</div>
                   <div class="card-footer__right"><i class="las la-fax"></i> Call</div>
                 </div>
