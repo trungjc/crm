@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="befe2c89-6b03-4d2a-b04d-6e106efc8491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/index-bu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scripts/lib/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scripts/lib/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/components/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/_variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/_variable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/components/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/components/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/components/_filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/components/_filter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/components/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/components/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,11 +31,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/components/_card.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="205">
               <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -108,13 +107,6 @@
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1212" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38" />
           </provider>
         </entry>
       </file>
@@ -186,6 +178,7 @@
         <option value="$PROJECT_DIR$/app/styles/_variable.scss" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/styles/components/_card.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -206,48 +199,6 @@
             <path>
               <item name="crm-html" type="b2602c69:ProjectViewProjectNode" />
               <item name="crm-html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm-html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crm-html" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm-html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crm-html" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm-html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crm-html" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm-html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crm-html" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm-html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crm-html" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap4.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm-html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crm-html" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap4.0" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,12 +250,20 @@
       <workItem from="1591023839130" duration="6807000" />
       <workItem from="1591087328179" duration="1215000" />
       <workItem from="1591090293900" duration="6244000" />
-      <workItem from="1591096622931" duration="7262000" />
+      <workItem from="1591096622931" duration="7394000" />
     </task>
+    <task id="LOCAL-00001" summary="UPdate contact grid 02">
+      <created>1591115769142</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591115769142</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21528000" />
+    <option name="totallyTimeSpent" value="21660000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,7 +294,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.35" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.35" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -344,6 +303,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="UPdate contact grid 02" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPdate contact grid 02" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -515,9 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/lib/popper.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -613,6 +573,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
