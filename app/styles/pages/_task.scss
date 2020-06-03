@@ -1,0 +1,31 @@
+.task {
+  &__item--active {
+    .task__item-name {
+      color: $headings-color
+    }
+  }
+  &__item {
+    min-height: 62px;
+    border-radius: 10px;
+    border: 1px solid #ECECF2;
+    padding: 10px 20px;
+    margin: 0 0 6px;
+    &.dragable {
+      border-style: dashed;
+      cursor: move;
+    }
+  }
+  &__item-avatar {
+    img {
+      border-radius: 4px;
+    }
+  }
+  &__item-left {
+    max-width: 50%;
+  }
+  &__item-right {
+    .badge {
+      min-width: 84px;
+    }
+  }
+}

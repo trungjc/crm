@@ -10,3 +10,11 @@ img {
 .link {
   color:$primary
 }
+
+* {
+  outline: none;
+}
+
+hr {
+  color:$input-border-color
+}

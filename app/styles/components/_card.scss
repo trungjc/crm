@@ -5,11 +5,18 @@
   //border: 1px solid #eeeeee;
   box-shadow: none;
   &__avatar {
-    margin-bottom: 10px;
+    margin:0 auto 10px;
+    max-width: 66px;
+    position: relative;
+    .status {
+      position: absolute;
+      bottom: -2px;
+      right: -2px;
+    }
 
     img {
       border-radius: 8px;
-      max-width: 66px;
+
     }
   }
   &__name {

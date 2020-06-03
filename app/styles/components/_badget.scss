@@ -1,0 +1,18 @@
+.badge {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: inherit;
+  &--done {
+    background: rgba(124,231,172,0.1)!important;
+    color:$green;
+  }
+  &--pending {
+    background: rgba(244,190,94,0.1)!important;
+    color:$yellow;
+  }
+  &--hold {
+    background: $gray-800!important;
+    color:#9897BB;
+  }
+}

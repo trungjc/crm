@@ -113,10 +113,10 @@ $font-family-base:            $font-family-sans-serif !default;
 
 $nav-link-color:                         #649DB8 !default;
 $input-color:                           $headings-color !default;
-$input-border-color:                    #A7ABB3 !default;
+$input-border-color:                    $gray-300 !default;
 $input-border-width:                    1px !default;
 
-$input-border-radius:                   4px !default;
+$input-border-radius:                   0px !default;
 
 
 $input-focus-bg:                        white !default;
@@ -134,7 +134,7 @@ $width-default: 220px !default; // 3 960px-grid columns
 $zindex-select-dropdown: 1060 !default; // must be higher than a modal background (1050)
 
 //** Placeholder text color
-$input-color-placeholder: #505867 !default;
+$input-color-placeholder: $gray-900 !default;
 $input-alt-color-placeholder: rgba(255, 255, 255, 0.5) !default;
 
 $input-padding-y-sm: .25rem !default;

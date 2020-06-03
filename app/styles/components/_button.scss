@@ -7,12 +7,22 @@
   outline: none!important;
   background: none;
   box-shadow: none;
+  &.pending {
+    background: #fef9ef!important;
+  }
+  &.complete {
+    background: #fff2f3!important;
+  }
+  &.archive {
+    background: #eff2fe!important;
+  }
   &--yellow {
     background: #fef8ef!important;
   }
   &--blue {
     background: #ecfcfe!important;
   }
+
   &--medium {
     width: 56px;
     height:  56px;
@@ -50,8 +60,34 @@
     background: $blue;
     border-color: $blue;
   }
+
 }
 
 .btn-light {
   color: $blue
+}
+.btn-outline {
+  background: none;
+  border: 1px solid #ECECF2;
+  border-radius: 8px;
+  height: 36px;
+  min-width: 36px;
+  line-height: 36px;
+  box-shadow: none!important;
+  & + .btn-outline {
+    margin-left: 10px;
+  }
+  &--sm {
+    border-radius: 6px;
+  }
+  &.medium{
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &:hover {
+    background: none;
+    border: 1px solid $blue;
+    color: $blue
+  }
 }

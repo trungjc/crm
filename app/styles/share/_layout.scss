@@ -24,12 +24,17 @@
 }
 
 .content {
-  margin: 25px;
-  border-radius: 12px;
-  padding: 25px;
+
+  padding: 15px;
   background: white;
   &__top {
     margin: 22px 25px;
+  }
+  @include min-768 {
+    margin: 25px;
+    border-radius: 12px;
+    padding: 25px;
+    min-width: 600px;
   }
 }
 

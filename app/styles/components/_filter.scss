@@ -16,9 +16,13 @@
     border: none!important;
     outline: none!important;
     box-shadow: none!important;
+    margin-left: 5px;
   }
 }
 
 .filter-top {
   margin: 0 0 20px;
+  @include max-767 {
+    display: block;
+  }
 }

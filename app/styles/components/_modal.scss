@@ -1,0 +1,36 @@
+.modal-footer {
+  padding: 18px 28px;
+  &--grey {
+    background: $gray-800;
+  }
+  textarea {
+    border: none;
+    resize: none;
+    background: none;
+    height: 30px;
+    outline: none!important;
+    box-shadow: none!important;
+    color:#9897BA
+  }
+  .btn-primary {
+    min-width: 100px;
+  }
+  .las {
+    color: $gray-900;
+  }
+}
+
+.modal-body {
+  padding: 28px;
+}
+.modal-header {
+  padding-left: 28px;
+  padding-right: 28px;
+  border: none;
+}
+
+@include min-768 {
+  .modal-dialog {
+    max-width: 662px;
+  }
+}

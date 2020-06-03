@@ -398,10 +398,10 @@
   user-select: $value;
 }
 
-@mixin checkbox($size:42px,$border-size: 3px,$tick-size:20px,$color: #2FC56f,$top:0px) {
+@mixin checkbox($size:20px,$border-size: 2px,$tick-size:10px,$color: $blue,$top:0px) {
   display: block;
   position: relative;
-  padding-left: $size + 10px;
+  padding-left: $size;
   cursor: pointer;
   margin: 0;
   min-height: $size;
@@ -414,27 +414,33 @@
     cursor: pointer;
     height: 0;
     width: 0;
-    &:checked + span:before {
-      opacity: 1;
+    &:checked {
+      &+ .ck {
+        background: $color;
+        border-color: $color;
+        &:before {
+          opacity: 1;
+        }
+      }
     }
   }
-  span {
+  .ck {
     position: absolute;
     left:0;
     top:$top;
     display: block;
     width:$size;
     height: $size;
-    background: white;
-    border:$border-size solid $color;
+    background: #f0f0f3;
+    border:$border-size solid #f0f0f3;
     border-radius: 4px;
     &:before {
       display: block;
       content: "";
       width: $tick-size;
       height: $tick-size/2;
-      border-left: $border-size solid $color;
-      border-bottom: $border-size solid $color;
+      border-left: $border-size solid white;
+      border-bottom: $border-size solid white;
       position: absolute;
       left: 50%;
       top: 44%;
