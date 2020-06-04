@@ -4,21 +4,25 @@
   height: 4px;
   &--red {
     .progress-bar {
-      background: $red;
+      background: $red!important;
     }
   }
   &--yellow {
     .progress-bar {
-      background: $yellow
+      background: $yellow!important;
     }
   }
+  &--blue {
+    .progress-bar {
+      background: $blue!important;
+    }
+  }
+
   &--green {
     .progress-bar {
-      background: $green;
+      background: $green!important;
     }
   }
 }
 
-.progress-bar {
 
-}

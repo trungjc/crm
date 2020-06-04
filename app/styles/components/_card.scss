@@ -49,6 +49,9 @@
 
 .card-body {
   padding: 16px;
+  &--md {
+    padding: 20px;
+  }
 }
 
 .card-footer {

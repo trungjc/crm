@@ -1,0 +1,40 @@
+.kanban {
+  &__col {
+    padding: 0 5px!important;
+
+  }
+  &__row {
+    margin: 0 -5px;
+  }
+  &__block {
+    border-radius: 10px;
+    padding: 24px;
+    border: 1px dashed $gray-700;
+    .card {
+      margin: 10px 0;
+      cursor: move;
+    }
+  }
+  &__progress {
+    margin: 20px 0;
+  }
+
+  &__info{
+    flex-wrap: wrap;
+    .badge {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__block-heading {
+    margin-bottom: 20px;
+    .la-plus-circle {
+      position: relative;
+      top: 2px;
+    }
+    .btn-icon {
+      font-weight: bold;
+      color: $headings-color
+    }
+  }
+}

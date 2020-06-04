@@ -1,11 +1,9 @@
-
-
-
 .btn-light {
   color: $blue
 }
 .btn {
   font-size: 1.2rem;
+  box-shadow: none!important;
   &.active {
     color: white;
     background: $blue;
