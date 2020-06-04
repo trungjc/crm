@@ -27,3 +27,29 @@
   @include flexbox;
   @include align-items(center);
 }
+
+
+.green {
+  background: $app-green!important;
+  color: $green!important;
+}
+.grey {
+  background: $app-grey!important;
+  color:$gray-900!important;
+}
+.yellow {
+  background: $app-yellow!important;
+  color: $yellow!important;
+}
+.red {
+  background: $app-red!important;
+  color: $red!important;
+}
+.blue {
+  background: $app-blue!important;
+  color: $blue!important;
+}
+.light-blue {
+  background: $app-light-blue!important;
+  color: $teal!important;
+}

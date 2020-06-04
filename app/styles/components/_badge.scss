@@ -1,0 +1,34 @@
+.badge {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: inherit;
+  &--green {
+    background: $app-green;
+    color:$green;
+  }
+  &--yellow {
+    background: $app-yellow;
+    color:$yellow;
+  } 
+  &--grey {
+    background: $app-grey;
+    color:$gray-900;
+  }
+
+  &--red {
+    background: $app-red;
+    color:$red;
+  }
+
+  &--blue {
+    background: $app-blue;
+    color:$blue;
+  }
+
+  &--light-blue {
+    background: $app-light-blue ;
+    color: $teal;
+  }
+
+}
