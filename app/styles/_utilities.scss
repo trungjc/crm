@@ -10,6 +10,10 @@
   font-size: 1.6rem!important;
 }
 
+.f-14 {
+  font-size: 1.4rem!important;
+}
+
 .f-12 {
   font-size: 1.2rem!important;
 }
@@ -56,6 +60,35 @@
 .text-black {
   color: $headings-color!important;
 }
+.text-inherit {
+  color: $gray-900!important;
+}
 .img-thumbnail {
   border-radius: 4px;
+}
+.text-blue {
+  color: $blue!important;
+}
+.text-red {
+  color: $red!important;
+}
+.text-yellow {
+  color: $yellow!important;
+}
+.text-green {
+  color: $green!important;
+}
+.text-light-blue {
+  color: $teal!important;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.font-weight-black {
+  font-weight: 900;
 }

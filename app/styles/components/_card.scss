@@ -34,6 +34,25 @@
       clear: both;
     }
   }
+  &__top {
+   .progress {
+     width: 38px;
+   }
+  }
+  &__logo {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto 15px;
+    justify-content: center;
+    align-items: center;
+    background: $gray-700;
+    border-radius: 6px;
+    i {
+      font-size: 30px;
+    }
+  }
   &__progress {
     color: $headings-color;
     padding: 20px 0;
