@@ -7,15 +7,36 @@ label {
 
 .form-group {
   margin-bottom: 30px;
+  &__icon {
+    position: relative;
+    input {
+      padding-right: 30px;
+      &:focus {
+        & + i {
+          color: #1c1d21;
+        }
+      }
+
+    }
+    i {
+      font-size: 20px;
+      right: 0px;
+      position: absolute;
+      top: 50%;@include translateY(-50%);
+
+    }
+  }
 }
 .form-control {
   padding:10px 0;
   border: none;
   border-bottom: 1px solid $input-border-color;
   box-shadow: none!important;
+  @include placeholder(#8181A5);
   &.no-border {
     border: none!important;
   }
+
 }
 .upload {
   position: relative;
@@ -31,7 +52,11 @@ label {
     margin-left: 5px;
   }
 }
-.checkbox {
+.checkbox,.radio {
   margin:0;
   @include checkbox();
+}
+.radio {
+  margin:0;
+  @include radio()
 }

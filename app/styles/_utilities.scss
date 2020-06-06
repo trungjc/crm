@@ -26,10 +26,18 @@
   font-weight: 300;
 }
 .block-center-between {
+   @include flexbox;
+   @include justify-content(space-between);
+   @include align-items(center);
+ }
+
+.block-start-between {
   @include flexbox;
   @include justify-content(space-between);
-  @include align-items(center);
+  @include align-items(flex-start);
 }
+
+
 .block-between {
   @include flexbox;
   @include justify-content(space-between);
@@ -37,6 +45,11 @@
 .block-center {
   @include flexbox;
   @include align-items(center);
+}
+.block-center-center {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
 }
 
 
@@ -98,4 +111,10 @@
 
 .font-weight-black {
   font-weight: 900;
+}
+
+@include max-767 {
+  .hide-xs {
+    display: none!important;
+  }
 }

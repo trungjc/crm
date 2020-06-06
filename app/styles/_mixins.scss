@@ -314,6 +314,7 @@
 }
 // Placeholder text
 @mixin placeholder($color: $placeholder) {
+  font-weight: bold;
   // Firefox
   &::-moz-placeholder {
     color: $color;
@@ -451,17 +452,19 @@
   }
 }
 
-@mixin radio($size:42px,$border-size: 2px,$tick-size:32px,$color: #2FC56f,$top:0px) {
-  span {
+@mixin radio($size:20px,$border-size: 2px,$tick-size:32px,$color: $blue,$top:0px) {
+  span.ck {
     border-radius: 50%;
+    background: $color;
+    border:0 solid $color;
     &:before {
-      height: $tick-size;
-      width: $tick-size;
+      height: 10px;
+      width: 10px;
       top: 50%;
       @include transform(-50%, -50%);
       border-radius:  50%;
-      background: $color;
-      border: $border-size solid $color;
+      background: white;
+      border: 0 solid white;
     }
   }
 }

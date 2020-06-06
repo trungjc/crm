@@ -1,0 +1,53 @@
+.auth-layout {
+  background: #3362ea;
+  &__left {
+    background: white;
+    height: 100vh;
+    padding: 20px;
+  }
+  &__right {
+    background: url("../images/gradient-bg.png") no-repeat left center;
+    background-size: cover;
+    width: 45%;
+    text-align: right;
+    img {
+      max-height: 100vh;
+    }
+  }
+  @include min-768 {
+    &__left {
+      width: 55%;
+      border-radius: 0 17px 17px 0;
+    }
+  }
+}
+.form__auth {
+  margin: 40px 0;
+  @include min-768 {
+    width: 360px;
+    margin: 80px 0;
+  }
+}
+
+.social {
+  &__item {
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    border: 1px solid #ECECF2;
+    border-radius: 8px;
+    display: block;
+    margin: 0 6px 0 0;
+    color:$gray-900;
+    &:hover {
+      background: $blue;
+      border-color: $blue;
+      color: white;
+    }
+    i {
+      font-size: 14px;
+      color: inherit;
+    }
+  }
+}
