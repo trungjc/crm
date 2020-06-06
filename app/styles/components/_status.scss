@@ -1,0 +1,31 @@
+.status {
+  width: 9px;
+  height: 9px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: block!important;
+
+  &.right-bottom {
+    right: -4px;
+    position: absolute;
+    bottom: -4px;
+  }
+  &--red,&--busy {
+    background: $red;
+  }
+  &--green{
+    background: $green;
+  }
+  &--green,&--online {
+    background: $green;
+  }
+  &--yellow {
+    background: $yellow;
+  }
+  &--blue {
+    background: $blue;
+  }
+  &--grey,&--offline {
+    background: $gray-900;
+  }
+}

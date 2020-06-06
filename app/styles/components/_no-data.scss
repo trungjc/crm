@@ -1,0 +1,16 @@
+.empty-content {
+  text-align: center;
+  padding: 20px;
+  min-height: calc(100vh - 100px);
+  &__img {
+    max-width: 540px;
+    margin-bottom: 40px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__btn {
+    margin-top: 35px;
+    min-width: 178px;
+  }
+}
