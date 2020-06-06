@@ -17,7 +17,10 @@
     .status {
       position: absolute;
       top: 12px;
-      right: 12px;
+      left: 24px;
+      .show-sidebar & {
+        left: 6px
+      }
     }
     i {
       font-size: 20px;
@@ -64,6 +67,12 @@
 
 
 .profile {
+  @include flexbox;
+  @include align-items(center);
+  strong {
+    margin-left: 20px;
+
+  }
   &__avatar  {
     position: relative;
     width: 32px;
@@ -95,4 +104,33 @@
 }
 .boxes {
   min-height: 54vh;
+}
+
+//----------------show sidebar-----------------------//
+.show-sidebar {
+  .app__left-bar {
+    width: auto;
+    text-align: left;
+  }
+  .logo {
+    @include flexbox;
+    @include align-items(center);
+    strong {
+      display: block!important;
+      margin-left: 20px;
+    }
+  }
+  .left-bar .nav-link {
+    @include justify-content(flex-start);
+    span {
+      display: block!important;
+      margin-left: 20px;
+    }
+  }
+  .profile {
+    .d-none {
+      display: block!important;
+      margin-left: 20px;
+    }
+  }
 }
