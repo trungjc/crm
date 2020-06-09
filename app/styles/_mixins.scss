@@ -415,6 +415,15 @@
     cursor: pointer;
     height: 0;
     width: 0;
+    &:disabled {
+      opacity: 0.7;
+      &+ .ck {
+        opacity: 0.7;
+      }
+      &+ .ck + span:not(.error) {
+        opacity: 0.7;
+      }
+    }
     &:checked {
       &+ .ck {
         background: $color;
@@ -422,6 +431,30 @@
         &:before {
           opacity: 1;
         }
+      }
+      &+ .ck + span:not(.error) {
+        color: $headings-color;
+      }
+    }
+    &.error {
+     & + .ck {
+       background: #ffecee;
+       border-color: #ffecee;
+      }
+      &+ .ck + span:not(.error) {
+        color:$red;
+      }
+    }
+    &.success {
+      & + .ck {
+        background: #eefdf5;
+        border-color:#eefdf5;
+        &:before {
+          border-color:$green;
+        }
+      }
+      &+ .ck + span:not(.error) {
+        color:$green;
       }
     }
   }
@@ -450,9 +483,21 @@
       opacity: 0;
     }
   }
+
 }
 
 @mixin radio($size:20px,$border-size: 2px,$tick-size:32px,$color: $blue,$top:0px) {
+  input {
+    &.success {
+      & + .ck {
+
+        &:before {
+          background: $green;
+        }
+      }
+
+    }
+  }
   span.ck {
     border-radius: 50%;
     background: $color;

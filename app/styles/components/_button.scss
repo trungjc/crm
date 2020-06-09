@@ -2,7 +2,7 @@
   color: $blue
 }
 .btn {
-  font-size: 1.2rem;
+  //font-size: 1.4rem;
   box-shadow: none!important;
   &.d-block {
     width: 100%;
@@ -22,20 +22,26 @@
     border-color: $hover-color!important;
     color: white!important;
   }
+  &:active{
+    color: $blue!important;
+    background: $app-blue!important;
+    border-color: $app-blue!important;
+  }
 }
 .btn-lg {
-  border-radius: 8px;
+  border-radius: $border-radius;
   font-size: 1.4rem;
   padding: 11px 20px;
 }
 
 .btn-outline {
+  color: inherit;
   background: none;
   border: 1px solid #ECECF2;
-  border-radius: 8px;
+  border-radius: $border-radius;
   height: 36px;
   min-width: 36px;
-  line-height: 36px;
+  line-height: 1;
   box-shadow: none!important;
   & + .btn-outline {
     margin-left: 10px;
@@ -48,10 +54,23 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+}
+.btn-outline-secondary {
+  border: 1px solid #ECECF2;
+  color: inherit;
+}
+
+.btn-outline-primary {
   &:hover {
-    background: none;
-    border: 1px solid $blue;
-    color: $blue
+    background: white!important;
+    border-color: $primary!important;
+    color: $headings-color!important;
+  }
+  &:active {
+    background: white!important;
+    border-color: #ececf2!important;
+    color: $body-color!important;
   }
 }
 
@@ -63,18 +82,18 @@
   outline: none!important;
   background: none;
   box-shadow: none;
-  display: inline-block;
+  display: inline-flex;
+  @include justify-content(center);
+  @include align-items(center);
   font-size: inherit;
   &--medium {
     width: 56px;
     height:  56px;
     border-radius: 10px;
-    line-height:  56px;
   }
   &--small {
     width: 36px;
     height: 36px;
-    line-height: 36px;
     border-radius: 4px;
     &.xs {
       width: 42px;

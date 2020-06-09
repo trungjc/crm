@@ -70,22 +70,28 @@
   color: $red!important;
 }
 .blue {
-  background: $app-blue!important;
-  color: $blue!important;
+   background: $app-blue!important;
+   color: $blue!important;
+ }
+
+.primary {
+  background: $primary!important;
+  color: white!important;
 }
+
 .light-blue {
   background: $app-light-blue!important;
   color: $teal!important;
 }
+
+
 .text-black {
   color: $headings-color!important;
 }
 .text-inherit {
   color: $gray-900!important;
 }
-.img-thumbnail {
-  border-radius: 4px;
-}
+
 .text-blue {
   color: $blue!important;
 }
@@ -102,6 +108,9 @@
   color: $teal!important;
 }
 
+.img-thumbnail {
+  border-radius: 4px;
+}
 .tag {
   padding: 5px 10px;
   border-radius: 20px;

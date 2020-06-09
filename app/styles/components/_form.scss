@@ -9,6 +9,15 @@ label {
   margin-bottom: 30px;
   &__icon {
     position: relative;
+    &.left {
+      i {
+        right: auto;
+        left:0;
+      }
+      input {
+        padding-left: 30px;
+      }
+    }
     input {
       padding-right: 30px;
       &:focus {
@@ -35,6 +44,12 @@ label {
   @include placeholder(#8181A5);
   &.no-border {
     border: none!important;
+  }
+  &.is-invalid {
+    border-color: $red;
+  }
+  &.is-valid {
+    border-color: $green;
   }
 
 }
