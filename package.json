@@ -6,8 +6,13 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "bootstrap": "^4.3.1",
+    "bootstrap-select": "^1.13.17",
+    "bootstrap-slider": "^11.0.2",
+    "bootstrap4-tagsinput-umd": "^1.0.2",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
     "jquery": "^3.4.1",
     "modernizr": "^3.7.1",
+    "moment": "^2.26.0",
     "popper": "^1.0.1",
     "popper.js": "^1.15.0"
   },

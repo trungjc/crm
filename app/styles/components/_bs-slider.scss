@@ -1,0 +1,52 @@
+////==================BOOTSTRAP SLIDER =========================///
+div.slider-selection {
+  background: $primary!important;
+}
+div.slider-track {
+  box-shadow: none;
+}
+.slider {
+  .slider-handle {
+    background: white!important;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.10);
+  }
+  .tooltip {
+    &.show {
+      opacity: 1;
+    }
+  }
+  .tooltip-inner {
+    background: #eee;
+    color: $headings-color;
+    font-family: inherit;
+    border-radius: 0;
+    padding:10px;
+    opacity: 1;
+  }
+  .bs-tooltip-top .arrow:before, .bs-tooltip-auto[x-placement^="top"] .arrow:before {
+    border-top-color: #eee;
+  }
+}
+
+.slider-tick.round {
+  display: none;
+}
+.slider-tick-label {
+  position: relative;
+  color: $headings-color;
+  font-weight: bold;
+  padding-top: 20px;
+  &:after {
+    content: "";
+    color: inherit;
+    position: absolute;
+    top: 10px;
+    background: #EEEEEE;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 9px;
+    width: 1px;
+
+  }
+}

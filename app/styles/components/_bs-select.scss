@@ -1,0 +1,71 @@
+
+////==================BOOTSTRAP SELECT =========================///
+
+div.bootstrap-select {
+  //display: block!important;
+  //width: 100%!important;
+  .btn {
+    background: none!important;
+    outline: none!important;
+    box-shadow: none!important;
+    padding-left: 0;
+    padding-right: 20px;
+    font-weight: bold;
+    border-radius: 0;
+    border: none!important;
+    border-bottom:1px solid $input-border-color!important;
+    &:not(.bs-placeholder){
+      border-color: $primary!important;
+      color: inherit;
+
+    }
+    &:hover {
+      color: inherit!important;
+      border-color: $primary!important;
+    }
+  }
+  .las {
+    margin-right: 5px;
+    font-size: 16px;
+  }
+  .dropdown-menu {
+    margin-top: 18px;
+    border-radius: $border-radius;
+    border-color: #ECECF2;
+    .dropdown-item {
+      padding: 12px 16px;
+      color: $headings-color;
+      font-weight: bold;
+
+      &:hover {
+        color: $primary;
+        background: #fbfbfd;
+      }
+      &.selected {
+        background: #fbfbfd;
+        color: $primary;
+      }
+    }
+  }
+  > .dropdown-toggle:after {
+    font-family: 'Line Awesome Free';
+    content:"\f107";
+    margin: 0;
+    border: none;
+    position: absolute;
+    color: inherit;
+    right: 0;
+    top: 50%;
+    @include  translateY(-50%);
+    width: auto;
+    height: auto;
+  }
+  > select.mobile-device:focus + .dropdown-toggle {
+    outline: none!important;
+    outline-offset: 0!important;
+  }
+  .dropdown-toggle:focus {
+    outline: none!important;
+    outline-offset: 0!important;
+  }
+}

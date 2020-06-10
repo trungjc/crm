@@ -488,20 +488,26 @@
 
 @mixin radio($size:20px,$border-size: 2px,$tick-size:32px,$color: $blue,$top:0px) {
   input {
-    &.success {
-      & + .ck {
 
+    &:checked {
+      & + span.ck {
+        border-radius: 50%;
+        background: $color;
+        border:0 solid $color;
+      }
+    }
+    &.success {
+      & + span.ck {
+        background: #eefdf5;
+        border-color:#eefdf5;
         &:before {
           background: $green;
         }
       }
-
     }
   }
   span.ck {
-    border-radius: 50%;
-    background: $color;
-    border:0 solid $color;
+
     &:before {
       height: 10px;
       width: 10px;

@@ -85,6 +85,23 @@
       </div>
 
       <div class="mb-5"></div>
+      <h1>Button Colors</h1>
+      <div class="d-flex">
+        <div class="mr-2">
+          <button class="btn btn-primary btn--green">Label</button>
+        </div>
+        <div class="mr-2">
+          <button class="btn btn-primary  btn--red">Label</button>
+        </div>
+        <div class="mr-2">
+          <button class="btn btn-primary btn--yellow" >Label</button>
+        </div>
+        <div class="mr-2">
+          <button class="btn btn-primary btn--purple" >Label</button>
+        </div>
+      </div>
+      <div class="mb-5"></div>
+
 
       <h1>Button Icon square</h1>
       <div class="d-flex">
@@ -247,7 +264,34 @@
       </div>
       <div class="mb-5"></div>
 
+      <h1>Tabs</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="tab flex-center">
+            <button class="btn-tab  btn-tab--outline active">Tab 1</button>
+            <button class="btn-tab btn-tab--outline">Tab 2</button>
+            <button class="btn-tab btn-tab--outline">Tab 3</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tab flex-center">
+            <button class="btn-tab  btn-tab--primary active"><i class="las la-plus mr-2"></i>Tab 1</button>
+            <button class="btn-tab btn-tab--blue"><i class="las la-plus mr-2"></i>Tab 2</button>
+            <button class="btn-tab btn-tab--primary"><i class="las la-plus mr-2"></i>Tab 3</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+
+      </div>
+      <div class="mb-5"></div>
+
+
+
+
       <h1>Form element</h1>
+
       <div class="row">
         <div class="col-md-4">
           <div class="form-group">
@@ -298,13 +342,13 @@
           </div>
 
           <br/>
-          <div class="form-group">
+          <div class="form-group has-error">
             <label >
               Field title
             </label>
-            <div class="form-group__icon left">
+            <div class="form-group__icon left ">
               <input type="email" class="form-control is-invalid" placeholder="Start typing…" />
-              <i class="las la-envelope-open "></i>
+              <i class="las la-info-circle text-red"></i>
             </div>
           </div>
 
@@ -329,13 +373,13 @@
           </div>
 
           <br/>
-          <div class="form-group">
+          <div class="form-group has-valid">
             <label >
               Field title
             </label>
-            <div class="form-group__icon left">
+            <div class="form-group__icon left ">
               <input type="email" class="form-control is-valid" placeholder="Start typing…" />
-              <i class="las la-envelope-open "></i>
+              <i class="las la-check text-green"></i>
             </div>
           </div>
 
@@ -343,6 +387,72 @@
         <div class="mb-5"></div>
 
       </div>
+      <h1>Select</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <select title="Title" data-width="100%">
+              <option > Select item 1</option>
+              <option >Select item 2</option>
+              <option>Select item 3</option>
+            </select>
+          </div>
+          <div class="form-group"><input type="text" class="form-control" value="Tag,Delete" data-role="tagsinput"/></div>
+
+
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <select title="Title" data-width="100%">
+              <option data-icon="las la-user"> Select item 1</option>
+              <option data-icon="las la-plus">Select item 2</option>
+              <option data-icon="las la-users">Select item 3</option>
+            </select>
+          </div>
+
+          <select class="selectpicker" multiple data-actions-box="true" title="Title" data-width="100%">
+            <option>Mustard</option>
+            <option>Ketchup</option>
+            <option>Relish</option>
+          </select>
+
+
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <select title="Title" data-width="auto">
+              <option data-icon="las la-user"> Select item 1</option>
+              <option data-icon="las la-plus">Select item 2</option>
+              <option data-icon="las la-users">Select item 3</option>
+            </select>
+            <span class="mr-5"></span>
+            <select title="Title" data-width="fit">
+              <option data-icon="las la-user"> Select item 1</option>
+              <option data-icon="las la-plus">Select item 2</option>
+              <option data-icon="las la-users">Select item 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="mb-5"></div>
+      <h1>Calendar picker</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <!--<div class="datetime-picker1"></div>-->
+          <div class='form-group' >
+
+
+            <div class="form-group__icon ">
+              <input type='text' class="form-control datetime-picker" />
+              <i class="las la-calendar-alt " style="pointer-events: none"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="mb-5"></div>
 
 
@@ -435,6 +545,79 @@
         <div class="mb-5"></div>
 
       </div>
+      <div class="mb-5"></div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <label class="switch">
+            <input type="checkbox" >
+            <span class="slider "></span>
+            <span class="switch__label">Toggle off</span>
+          </label>
+          <br/>
+          <br/>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider "></span>
+            <span class="switch__label">Toggle on</span>
+          </label>
+        </div>
+        <div class="col-md-4">
+          <label class="switch">
+            <input type="checkbox" disabled>
+            <span class="slider "></span>
+            <span class="switch__label">Toggle of disabled</span>
+          </label>
+          <br/>
+          <br/>
+          <label class="switch">
+            <input type="checkbox" checked disabled>
+            <span class="slider "></span>
+            <span class="switch__label">Toggle on disabled</span>
+          </label>
+        </div>
+        <div class="col-md-4">
+          <label class="switch">
+            <input type="checkbox" class="is-invalid" >
+            <span class="slider "></span>
+            <span class="switch__label">Error toggle off</span>
+          </label>
+          <br/>
+          <br/>
+          <label class="switch">
+            <input type="checkbox" checked class="is-valid">
+            <span class="slider "></span>
+            <span class="switch__label">Success toggle on</span>
+          </label>
+        </div>
+      </div>
+      <div class="mb-5"></div>
+      <div class="row">
+        <div class="col-md-4">
+          <input class="slider-bs" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+          <div class="block-center-between mt-3">
+            <strong>Set amount</strong>
+            <strong class="text-black">450</strong>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <input class="slider-bs" type="text"  value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/>
+          <div class="block-center-between mt-3">
+            <strong>Set amount</strong>
+            <strong class="text-black">450</strong>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <input class="slider-bs" type="text" data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["$0", "$100", "$200", "$300", "$400"]'/>
+        </div>
+      </div>
+
+      <div class="mb-5"></div>
+
+
+
+
+
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

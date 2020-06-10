@@ -59,8 +59,11 @@ var app = {
 }
 
 $(document).ready(function () {
+  $('select').selectpicker();
+  // $('.datetime-picker1').datetimepicker({  inline: true, sideBySide: true});
+  $('.datetime-picker').datetimepicker();
+  $('.slider-bs').slider({});
   app.init();
-
   var resizeId;
   $(window).resize(function () {
     clearTimeout(resizeId);

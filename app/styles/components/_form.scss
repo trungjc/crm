@@ -35,6 +35,24 @@ label {
 
     }
   }
+  &.has-error {
+    input {
+      padding-left: 0;
+    }
+    .la-info-circle {
+      left: auto;
+      right:0;
+    }
+  }
+  &.has-valid {
+    input {
+      padding-left: 0;
+    }
+    .la-check {
+      left: auto;
+      right:0;
+    }
+  }
 }
 .form-control {
   padding:10px 0;
@@ -75,3 +93,6 @@ label {
   margin:0;
   @include radio()
 }
+
+
+
