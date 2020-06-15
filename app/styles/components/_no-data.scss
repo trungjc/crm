@@ -3,8 +3,11 @@
   padding: 20px;
   min-height: calc(100vh - 100px);
   &__img {
-    max-width: 540px;
+
     margin-bottom: 40px;
+    @include min-768 {
+      max-width: 540px;
+    }
   }
   &__title {
     margin-bottom: 20px;
